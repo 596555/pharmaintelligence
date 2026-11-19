@@ -20,6 +20,8 @@ jobs:
       - name: Run medicine master data tests
         run: python -m unittest discover -s 09-PRODUCTS/Medicine-Data-Cleaner/tests -v
       - name: Run drug development workbench tests
+        env:
+          PYTHONPATH: 09-PRODUCTS/Drug-Development-Workbench/src
         run: python -m unittest discover -s 09-PRODUCTS/Drug-Development-Workbench/tests -v
       - name: Run public research connector tests
         run: python -m unittest discover -s 08-RESEARCH-TOOLS/tests -v
