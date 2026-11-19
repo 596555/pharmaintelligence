@@ -1,12 +1,23 @@
-# Project status
+# Project status — 19 November 2026
 
-Initial repository structure and learning roadmap have been published.
+## Published
+- Initial project charter, 365-day roadmap, Windows setup and learning tracks.
+- Pharma Stock Intelligence MVP: Python validation/KPI engine, synthetic batch CSV, Streamlit dashboard and unit tests.
+- Windows run instructions and product-specific dependencies.
+- Excel/Power BI exercise, SQL schema, automation blueprint and portfolio case study.
+- GitHub Actions workflow to run the MVP unit tests on pushes and pull requests.
 
-Next: install the free local tools and begin the Day 1 synthetic-data exercise.
+## Verification
+The key source files, dataset, tests, execution plan and workflow were fetched successfully from the default branch after publishing. The GitHub Actions workflow is configured; a passing CI result must be confirmed in the Actions tab after its run completes. The code has not been executed on the user's Toshiba Windows device.
 
+## Next local command
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r 09-PRODUCTS/Pharma-Stock-Intelligence/requirements.txt
+py -m unittest discover -s 09-PRODUCTS/Pharma-Stock-Intelligence/tests -v
+streamlit run 09-PRODUCTS/Pharma-Stock-Intelligence/app.py
+```
 
-## First product milestone
-- Published a runnable standard-library Python MVP for Pharma Stock Intelligence.
-- Added synthetic batch-level CSV, JSON report generation, row validation and unit tests.
-- Verified that the source, sample data, tests and guide are present on the default branch.
-- Local test execution is the next user-side verification because this workspace cannot execute code on the user's Windows device.
+## Safety
+All included stock records and supplier labels are synthetic. Never upload patient-identifiable or confidential pharmacy data. All stock flags are administrative review prompts, not clinical or autonomous purchasing decisions.
