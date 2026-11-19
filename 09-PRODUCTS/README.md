@@ -6,7 +6,6 @@ The portfolio is pharmacy-first: medicine data quality, stock/expiry/consumption
 2. [Medicine Master Data Validator](Medicine-Data-Cleaner/README.md) — structural medicine catalogue checks.
 3. [Drug Safety Signal Explorer](Drug-Safety-Explorer/README.md) — responsible public spontaneous-report exploration.
 4. [Pharmacy Workflow Automator](Pharmacy-Workflow/README.md) — human-approved administrative process automation.
-5. [Medicine Master Data Cleaner — planned extension](Medicine-Data-Cleaner/README.md) — ingredient/strength/form/route data quality.
 6. [Pharma Knowledge Copilot](Pharma-Knowledge-Copilot/README.md) — cited retrieval over curated official sources.
 
 Excel is one analysis tool. Python, SQL, Power BI, statistics, APIs, ML, LLM/RAG, testing and pharmacy-domain knowledge are essential parallel skills.
