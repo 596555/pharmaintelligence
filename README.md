@@ -37,3 +37,11 @@ Never commit patient-identifiable or confidential pharmacy data. Use synthetic/p
 
 ## Completion standard
 Each topic produces an artifact: dataset, query, dashboard, tested script, documented workflow or case study.
+
+## First runnable product
+- [First Product Guide](FIRST_PRODUCT_GUIDE.md)
+- [Stock Intelligence CLI](stock_intelligence.py)
+- [Synthetic batch data](sample_stock_batches.csv)
+- [Unit tests](test_stock_intelligence.py)
+
+Run locally with `py -m unittest -v` and `py stock_intelligence.py sample_stock_batches.csv --as-of 2026-11-19`.
