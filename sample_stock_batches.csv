@@ -1,0 +1,7 @@
+product_id,medicine_name,batch_no,expiry_date,quantity,unit_cost,monthly_usage
+MED001,Paracetamol 500 mg,PCM-A01,2027-01-15,120,0.04,150
+MED001,Paracetamol 500 mg,PCM-A02,2027-06-30,240,0.04,150
+MED002,Amoxicillin 500 mg,AMX-B11,2026-12-20,35,0.12,80
+MED003,Omeprazole 20 mg,OMP-C21,2027-08-01,90,0.08,45
+MED004,Cetirizine 10 mg,CET-D09,2026-11-25,18,0.06,30
+MED005,Metformin 500 mg,MET-E04,2027-03-10,200,0.05,120
