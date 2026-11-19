@@ -1,0 +1,11 @@
+product_id,medicine_name,category,batch_no,expiry_date,quantity,reorder_level,unit_cost,supplier
+P001,Amoxicillin 500 mg capsules,Antibiotic,B-A001,2027-02-15,120,80,0.12,Synthetic Supplier A
+P002,Paracetamol 500 mg tablets,Analgesic,B-P014,2027-01-10,45,60,0.03,Synthetic Supplier B
+P003,Omeprazole 20 mg capsules,Gastrointestinal,B-O022,2026-12-05,30,40,0.08,Synthetic Supplier C
+P004,Cetirizine 10 mg tablets,Antihistamine,B-C031,2027-08-20,200,70,0.05,Synthetic Supplier A
+P005,Metformin 500 mg tablets,Antidiabetic,B-M018,2027-03-30,90,100,0.04,Synthetic Supplier D
+P006,Ibuprofen 200 mg tablets,Analgesic,B-I007,2026-10-01,25,50,0.06,Synthetic Supplier B
+P007,Saline 0.9 percent solution,Other,B-S009,2027-05-12,75,30,0.09,Synthetic Supplier C
+P008,Vitamin D3 1000 IU tablets,Supplement,B-V011,2028-01-01,150,50,0.07,Synthetic Supplier D
+P009,Azithromycin 250 mg tablets,Antibiotic,B-A019,2027-04-17,18,25,0.22,Synthetic Supplier A
+P010,Loratadine 10 mg tablets,Antihistamine,B-L002,2027-06-09,65,40,0.05,Synthetic Supplier B
