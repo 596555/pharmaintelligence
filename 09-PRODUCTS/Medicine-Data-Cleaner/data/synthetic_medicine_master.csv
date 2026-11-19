@@ -1,0 +1,11 @@
+product_id,generic_name,brand_name,strength_value,strength_unit,dosage_form,route,pack_size,manufacturer
+M001,paracetamol,DemoParacetamol,500,mg,tablet,oral,20,Synthetic Labs A
+M002,amoxicillin,DemoAmoxi,500,mg,capsule,oral,12,Synthetic Labs B
+M003,omeprazole,DemoOmep,20,mg,capsule,oral,14,Synthetic Labs C
+M004,cetirizine,DemoCeti,10,mg,tablet,oral,10,Synthetic Labs A
+M005,metformin,DemoMet,500,mg,tablet,oral,30,Synthetic Labs D
+M006,ibuprofen,DemoIbu,200,mg,tablet,oral,20,Synthetic Labs B
+M007,salbutamol,DemoSalb,100,mcg,inhaler,inhalation,200,Synthetic Labs C
+M008,hydrocortisone,DemoHydro,1,%,cream,topical,1,Synthetic Labs D
+M009,artificial tears,DemoTears,0.5,%,eye_drops,ophthalmic,1,Synthetic Labs A
+M010,normal saline,DemoSaline,0.9,%,injection,IV,10,Synthetic Labs B
