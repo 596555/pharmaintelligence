@@ -11,13 +11,15 @@
 > Educational portfolio only. No output replaces a licensed professional's judgment or a regulated pharmaceutical quality system.
 
 ## Start here
-1. [Arabic PHARMAINTELLIGENCE Academy](00-START-HERE/ACADEMY_GUIDE_AR.md) — offline lessons, practical tasks, quizzes and local progress tracking
-2. [Personal AI tutor prompt](00-START-HERE/AI_TUTOR_PROMPT_AR.md) — turn ChatGPT into an interactive pharmacy/AI tutor
-3. [Project charter](00-START-HERE/PROJECT_CHARTER.md)
-4. [Windows 11 setup](00-START-HERE/WINDOWS_SETUP.md)
-5. [365-day roadmap](00-START-HERE/ROADMAP_365.md)
-6. [Working rules](00-START-HERE/WORKING_RULES.md)
-7. [Practical execution plan](00-START-HERE/EXECUTION_PLAN.md)
+1. [Open the unified browser lab](13-WEB-LAB/index.html) — Python, Excel/CSV, SQL, research and learning in one interface
+2. [Web Lab setup and limitations](13-WEB-LAB/README.md)
+3. [Arabic PHARMAINTELLIGENCE Academy](00-START-HERE/ACADEMY_GUIDE_AR.md) — offline lessons, practical tasks, quizzes and local progress tracking
+4. [Personal AI tutor prompt](00-START-HERE/AI_TUTOR_PROMPT_AR.md) — turn ChatGPT into an interactive pharmacy/AI tutor
+5. [Project charter](00-START-HERE/PROJECT_CHARTER.md)
+6. [Windows 11 setup](00-START-HERE/WINDOWS_SETUP.md)
+7. [365-day roadmap](00-START-HERE/ROADMAP_365.md)
+8. [Working rules](00-START-HERE/WORKING_RULES.md)
+9. [Practical execution plan](00-START-HERE/EXECUTION_PLAN.md)
 
 ## Repository map
 - `00-START-HERE/` — charter, setup, roadmap and rules
