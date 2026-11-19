@@ -8,7 +8,7 @@ $$('#main-nav .nav-item').forEach(b=>b.addEventListener('click',()=>go(b.dataset
 $$('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
 $('#menu-toggle').addEventListener('click',()=>$('#sidebar').classList.toggle('open'));
 $('#today-label').textContent=new Intl.DateTimeFormat('ar',{dateStyle:'medium'}).format(new Date());
-if(!navigator.onLine)$('#connection-label').textContent='وضع دون اتصال · الأدوات المحلية فقط';
+$('#connection-label').textContent=navigator.onLine?'متصل بالإنترنت':'وضع دون اتصال · الأدوات المحلية فقط';
 window.addEventListener('online',()=>$('#connection-label').textContent='متصل بالإنترنت');
 window.addEventListener('offline',()=>$('#connection-label').textContent='دون اتصال بالإنترنت');
 
