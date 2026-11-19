@@ -1,26 +1,23 @@
-# Pharma Stock Intelligence — runnable MVP 0.1
+# Pharma Stock Intelligence — pharmacy analytics MVP 0.2
 
-A local learning dashboard for **fictional inventory only**. It summarizes batch quantities, expiry exposure and low-stock records. It does not place orders or support clinical decisions.
+A pharmacy operations analytics prototype using synthetic batch stock and issue history. This is **not an accounting workbook** and does not automate purchasing or clinical decisions.
 
 ## Run on Windows 11
-From repository root:
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r 09-PRODUCTS/Pharma-Stock-Intelligence/requirements.txt
+py -m unittest discover -s 09-PRODUCTS/Pharma-Stock-Intelligence/tests -v
 streamlit run 09-PRODUCTS/Pharma-Stock-Intelligence/app.py
 ```
 
-## Run tests
-```powershell
-py -m unittest discover -s 09-PRODUCTS/Pharma-Stock-Intelligence/tests -v
-```
+## Modules
+- Batch inventory and expiry review.
+- Consumption-based average daily issues, estimated days of stock, safety stock, reorder point and suggested review quantity.
+- ABC classification by usage value.
+- FSN movement classification.
+- FEFO expiry queue and CSV exports.
 
-## KPI definitions
-- Total units: sum of non-negative quantities.
-- Expired units: quantity in batches with expiry before the selected analysis date.
-- Near expiry: quantity in batches expiring from the analysis date through 90 days later.
-- Low-stock batches: count of batches with quantity below reorder level.
-- Illustrative value: quantity × fictional unit cost; no real currency or valuation is implied.
+The bundled inventory and issue history are synthetic. Lead time, safety buffer and target horizon are adjustable examples. Issue history can understate demand during stockouts. Pack/unit conversion, seasonality, supplier variability, returns, transfers and minimum order quantities are not modeled. ABC is not VEN; VEN requires local expert governance.
 
-No demand history is included, so days-of-cover is intentionally not calculated. Flags are administrative review prompts only. Never use real patient or confidential pharmacy data.
+All flags require review by authorized pharmacy/procurement staff. No patient data, prescriptions, dispensing advice, treatment decisions or automatic purchase orders are supported.

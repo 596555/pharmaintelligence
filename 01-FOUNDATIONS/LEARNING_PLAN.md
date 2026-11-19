@@ -1,11 +1,10 @@
-# Foundations: Data Literacy and Statistics
+# Foundations for a pharmacist working with data
 
-Learn data types, identifiers, missing values, duplicates, descriptive statistics, distributions, uncertainty, percentages, rates, denominators, chart selection, correlation vs causation and sampling bias.
+## Data and statistics
+Population vs sample, variable types, distributions, mean/median, variance, percentiles, confidence intervals, correlation vs causation, missingness, outliers and denominator selection.
 
-## Free resources
-- Khan Academy Statistics: https://www.khanacademy.org/math/statistics-probability
-- Kaggle Learn: https://www.kaggle.com/learn
-- OpenIntro Statistics: https://www.openintro.org/book/os/
+## Pharmacy context
+Distinguish stock balance, receipts, issues, consumption, demand, wastage, returns, transfers and stockout. Understand medicine, strength, dosage form, route, pack, unit, batch and expiry as separate attributes.
 
-## Practical assignment
-Create 100 synthetic stock-movement rows. Detect duplicates, missing values and inconsistent units. Calculate stock on hand and expiry exposure. Write five findings and clearly distinguish observations from recommendations.
+## Practice
+Create a data dictionary for a synthetic medicine inventory, explain five quality risks, calculate consumption rates by hand and write a one-page interpretation for a pharmacy manager. Do not confuse inventory valuation with clinical availability or medicine-use quality.

@@ -1,12 +1,13 @@
-# Python Engineering
+# Python engineering for pharmacy informatics
 
-Learn variables, types, conditions, loops, functions, modules, CSV/JSON, pandas, matplotlib, exceptions, logging, virtual environments, pytest and Git.
+Learn syntax, functions, modules, virtual environments, file I/O, exceptions, type hints, pandas, datetime, APIs, JSON, logging, pytest/unittest and Git.
 
-## Free learning
-- Official Python tutorial: https://docs.python.org/3/tutorial/
-- Kaggle Python/Pandas: https://www.kaggle.com/learn
-- Google Colab: https://colab.research.google.com/
-- GitHub Skills: https://skills.github.com/
+## Applied sequence
+1. Validate medicine master records and dosage-form/strength fields.
+2. Parse batch and expiry data without changing source values.
+3. Analyze monthly issues and calculate transparent stock indicators.
+4. Build repeatable data pipelines with provenance and validation reports.
+5. Write tests for duplicates, invalid units, negative quantities, date errors and missing data.
+6. Expose reviewed outputs through a small Streamlit interface or API.
 
-## Deliverable
-Build a command-line data-quality checker for a synthetic medicine catalogue. It reports invalid fields and exports a review file. Include tests and a README.
+Resources: https://docs.python.org/3/tutorial/ and https://www.kaggle.com/learn

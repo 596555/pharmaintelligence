@@ -1,11 +1,16 @@
-# Excel, Power Query and Power BI
+# Excel, Power Query and Power BI for pharmacy analysis
+
+Excel is a useful inspection and communication tool, not the professional endpoint.
 
 ## Skills
-Tables, IF, SUMIFS, COUNTIFS, XLOOKUP, date functions, PivotTables, charts, conditional formatting, Power Query cleaning/merge, data models, relationships, basic DAX and dashboard design.
+- Tables, structured references, XLOOKUP, SUMIFS, COUNTIFS, IFERROR, date arithmetic.
+- Data validation, duplicate detection, text normalization and Power Query transformations.
+- PivotTables for product, category, supplier, batch and expiry cohort.
+- Power BI data model: fact consumption, fact stock batch, medicine dimension, calendar dimension.
+- DAX measures: on-hand units, issued units, expiry exposure, low-stock products, ABC value share and monthly consumption.
+- Visual design: operational questions, filters, drill-through, refresh date and definitions.
 
-## Free learning
-- Microsoft Learn Power BI: https://learn.microsoft.com/training/powerplatform/power-bi/
-- Power BI guidance: https://learn.microsoft.com/power-bi/guidance/
+## Pharmacy deliverable
+An interactive dashboard that answers: Which medicines are expiring first? Which are below calculated reorder points? What is consumption trend? Which products dominate usage value? Which records have suspect strength/form/pack units?
 
-## Deliverable
-Build an inventory dashboard from synthetic data: stock on hand, near-expiry quantities, potential stockout list and monthly movement. Define each KPI and its denominator.
+Do not build a financial-accounting-only workbook. Include medicine identifiers, strength, dosage form, route, batch and expiry context.
