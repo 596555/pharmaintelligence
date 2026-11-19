@@ -1,0 +1,5 @@
+risk_id,parameter_type,parameter,severity,occurrence,detectability,rationale,current_control,review_owner
+R-001,CPP,Granulation endpoint moisture,4,3,3,Illustrative training risk linking moisture to downstream performance,Documented endpoint review in the fictional case,Formulation scientist
+R-002,CMA,Incoming excipient particle size,3,2,3,Illustrative training risk for material variability,Approved material specification in the fictional case,Materials quality
+R-003,CQA,Dissolution performance,5,2,2,Illustrative training risk for product performance attribute,Development testing and trend review in the fictional case,Analytical development
+R-004,CPP,Compression force,3,3,2,Illustrative training risk for tablet mechanical properties,In-process monitoring concept in the fictional case,Process development
