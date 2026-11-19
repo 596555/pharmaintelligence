@@ -26,6 +26,8 @@ jobs:
         run: node --check 13-WEB-LAB/app.js
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload web lab
         uses: actions/upload-pages-artifact@v3
         with:
