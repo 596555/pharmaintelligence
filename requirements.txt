@@ -1,0 +1,1 @@
+# Core MVP uses Python standard library only; no third-party packages required.
