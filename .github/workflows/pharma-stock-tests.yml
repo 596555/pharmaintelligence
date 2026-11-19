@@ -1,4 +1,4 @@
-name: Pharma stock MVP tests
+name: Pharma and pharmaceutical development tests
 on:
   push:
     branches: [main]
@@ -17,3 +17,5 @@ jobs:
         run: python -m unittest discover -s 09-PRODUCTS/Pharma-Stock-Intelligence/tests -v
       - name: Run medicine master data tests
         run: python -m unittest discover -s 09-PRODUCTS/Medicine-Data-Cleaner/tests -v
+      - name: Run drug development workbench tests
+        run: python -m unittest discover -s 09-PRODUCTS/Drug-Development-Workbench/tests -v
