@@ -14,6 +14,7 @@
 2. [Windows 11 setup](00-START-HERE/WINDOWS_SETUP.md)
 3. [365-day roadmap](00-START-HERE/ROADMAP_365.md)
 4. [Working rules](00-START-HERE/WORKING_RULES.md)
+5. [Practical execution plan](00-START-HERE/EXECUTION_PLAN.md)
 
 ## Repository map
 - `00-START-HERE/` — charter, setup, roadmap and rules
@@ -37,6 +38,11 @@ Never commit patient-identifiable or confidential pharmacy data. Use synthetic/p
 
 ## Completion standard
 Each topic produces an artifact: dataset, query, dashboard, tested script, documented workflow or case study.
+
+## Interactive stock dashboard
+- [Streamlit MVP and Windows instructions](09-PRODUCTS/Pharma-Stock-Intelligence/README.md)
+- [Dashboard source](09-PRODUCTS/Pharma-Stock-Intelligence/app.py)
+- [Synthetic dataset](09-PRODUCTS/Pharma-Stock-Intelligence/data/synthetic_stock.csv)
 
 ## First runnable product
 - [First Product Guide](FIRST_PRODUCT_GUIDE.md)
