@@ -1,0 +1,35 @@
+name: Deploy PHARMAINTELLIGENCE Web Lab
+on:
+  push:
+    branches: [main]
+    paths:
+      - '13-WEB-LAB/**'
+      - '.github/workflows/deploy-web-lab.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: node --check 13-WEB-LAB/app.js
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload web lab
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 13-WEB-LAB
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
