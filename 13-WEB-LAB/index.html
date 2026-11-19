@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="PHARMAINTELLIGENCE 365 — بيئة تدريب وبحث وتحليل صيدلاني رقمية">
+  <title>PHARMAINTELLIGENCE 365 | المختبر الصيدلاني الرقمي</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">Φ</div><div><b>PHARMA<span>INTELLIGENCE</span></b><small>365 · DIGITAL LAB</small></div></div>
+    <div class="side-label">مساحة العمل</div>
+    <nav id="main-nav">
+      <button class="nav-item active" data-page="home"><i>⌂</i> لوحة المختبر</button>
+      <button class="nav-item" data-page="academy"><i>▤</i> الأكاديمية والمدرب</button>
+      <button class="nav-item" data-page="python"><i>⌘</i> مختبر Python</button>
+      <button class="nav-item" data-page="sheets"><i>▦</i> مختبر الجداول وExcel</button>
+      <button class="nav-item" data-page="sql"><i>▥</i> مختبر SQL</button>
+      <button class="nav-item" data-page="research"><i>⌕</i> البحث العلمي والدوائي</button>
+      <button class="nav-item" data-page="products"><i>◇</i> المنتجات الصيدلانية</button>
+      <button class="nav-item" data-page="library"><i>▧</i> المكتبة والمصادر</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="connection"><span class="pulse"></span><span id="connection-label">جاهز للعمل محلياً</span></div>
+      <small>الإصدار الأولي · واجهة تجريبية</small>
+      <a href="https://github.com/596555/pharmaintelligence" target="_blank" rel="noopener">مستودع المشروع ↗</a>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="menu-toggle" aria-label="القائمة">☰</button>
+      <div><div class="eyebrow">PHARMACEUTICAL DIGITAL WORKSPACE</div><div class="top-title" id="page-title">لوحة المختبر</div></div>
+      <div class="top-actions"><span class="today" id="today-label"></span><span class="avatar">PI</span></div>
+    </header>
+    <div class="content">
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="hero-copy"><div class="eyebrow light">YOUR PHARMACY · DATA · RESEARCH STUDIO</div><h1>من المعرفة الصيدلانية<br>إلى الابتكار الرقمي.</h1><p>بيئة واحدة تتعلم فيها، تحلل البيانات، تكتب Python وSQL، وتستكشف مصادر الأدوية والبحث العلمي.</p><button class="btn btn-light" data-go="academy">ابدأ جلسة التعلم <b>←</b></button></div>
+          <div class="hero-orbit"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="molecule">Φ</div><span class="orbit-tag tag-a">DATA</span><span class="orbit-tag tag-b">Rx</span><span class="orbit-tag tag-c">AI</span></div>
+        </div>
+        <div class="section-head"><div><div class="eyebrow">WORKSPACE OVERVIEW</div><h2>مساحة عملك</h2></div><span class="muted">الأدوات الأساسية في مكان واحد</span></div>
+        <div class="tool-grid">
+          <button class="tool-card" data-go="python"><span class="tool-icon purple">⌘</span><b>Python Lab</b><small>اكتب وشغّل كود Python في المتصفح</small><em>فتح المختبر ←</em></button>
+          <button class="tool-card" data-go="sheets"><span class="tool-icon green">▦</span><b>Spreadsheet Studio</b><small>استيراد CSV وExcel وتحرير البيانات</small><em>فتح الجداول ←</em></button>
+          <button class="tool-card" data-go="sql"><span class="tool-icon blue">▥</span><b>SQL Workbench</b><small>أنشئ قاعدة بيانات واكتب الاستعلامات</small><em>فتح SQL ←</em></button>
+          <button class="tool-card" data-go="research"><span class="tool-icon amber">⌕</span><b>Research Explorer</b><small>استكشف مصادر الأدوية والمركبات</small><em>فتح البحث ←</em></button>
+        </div>
+        <div class="section-head"><div><div class="eyebrow">LEARNING PATH</div><h2>مسارات المختبر</h2></div><button class="text-btn" data-go="library">كل المصادر ←</button></div>
+        <div class="path-grid">
+          <article class="path-card"><span class="path-no">01</span><div><b>البيانات الصيدلانية</b><p>جودة بيانات الأدوية، المخزون، الاستهلاك وSQL.</p><span class="tag">Pharmacy Informatics</span></div></article>
+          <article class="path-card"><span class="path-no">02</span><div><b>الصناعة والتطوير الدوائي</b><p>GMP وQbD وCMC وثبات المستحضرات.</p><span class="tag">Pharma R&D</span></div></article>
+          <article class="path-card"><span class="path-no">03</span><div><b>السلامة والذكاء الاصطناعي</b><p>اليقظة الدوائية والتحليل والتعلم الآلي.</p><span class="tag">PV · AI · ML</span></div></article>
+        </div>
+        <div class="notice"><b>مبدأ المختبر:</b> كل نتيجة يجب أن تكون قابلة للتفسير وإعادة التشغيل، ومصحوبة بمصدر وحدود استخدام واضحة. لا تستخدم بيانات مرضى حقيقية أو معلومات صيدلية سرية.</div>
+      </section>
+
+      <section class="page" id="page-academy">
+        <div class="page-intro"><div class="eyebrow">LEARN · PRACTICE · ASSESS</div><h1>الأكاديمية الصيدلانية</h1><p>تعلم المفهوم، نفذ تمريناً عملياً، ثم اختبر فهمك. تقدمك يحفظ محلياً في هذا المتصفح.</p></div>
+        <div class="academy-layout"><div class="panel lesson-list"><h3>الوحدات التعليمية</h3><div id="lesson-list"></div></div><div class="panel lesson-view" id="lesson-view"><div class="empty-state"><div class="empty-icon">✧</div><h3>اختر وحدة للبدء</h3><p>ستظهر هنا الأهداف والدرس والتطبيق والاختبار.</p></div></div></div>
+      </section>
+
+      <section class="page" id="page-python">
+        <div class="page-intro"><div class="eyebrow">IN-BROWSER PYTHON RUNTIME</div><h1>مختبر Python</h1><p>محرر برمجي بسيط لتجربة Python وتحليل البيانات دون تثبيت Python على الكمبيوتر. يعمل التنفيذ داخل المتصفح عبر Pyodide.</p></div>
+        <div class="runtime-bar"><span id="python-status" class="status-dot"></span><span id="python-status-text">لم يتم تحميل بيئة Python بعد</span><button class="btn btn-primary" id="load-python">تحميل بيئة Python</button><span class="muted small">يتطلب اتصالاً بالإنترنت عند أول تحميل</span></div>
+        <div class="editor-layout"><div class="panel editor-panel"><div class="panel-head"><b>main.py</b><div><button class="btn btn-ghost btn-sm" id="reset-python">إعادة المثال</button><button class="btn btn-primary btn-sm" id="run-python">▶ تشغيل</button></div></div><textarea id="python-code" class="code-editor" spellcheck="false"># PHARMAINTELLIGENCE · Python Lab
+# مثال تعليمي: حساب تغطية المخزون
+
+medicine = "Paracetamol 500 mg"
+stock = 300
+average_daily_use = 20
+
+days_of_stock = stock / average_daily_use
+
+print("Medicine:", medicine)
+print("Days of stock:", round(days_of_stock, 1))
+print("Interpretation: review replenishment based on lead time and safety stock.")</textarea><div class="editor-foot"><span>Python 3 · Pyodide</span><span>Shift + Enter غير مدعوم بعد؛ استخدم زر التشغيل</span></div></div><div class="panel output-panel"><div class="panel-head"><b>Console / المخرجات</b><button class="btn btn-ghost btn-sm" id="clear-python">مسح</button></div><pre id="python-output">ستظهر نتائج تشغيل الكود هنا.</pre></div></div>
+        <div class="notice">بيئة Python هنا تعمل داخل المتصفح وليست تثبيتاً كاملاً لنسخة Python المكتبية. لا تتوفر تلقائياً كل المكتبات، ولا تتصل بملفات جهازك إلا عبر واجهة رفع الملفات التي يتيحها المتصفح.</div>
+      </section>
+
+      <section class="page" id="page-sheets">
+        <div class="page-intro"><div class="eyebrow">SPREADSHEET STUDIO</div><h1>مختبر الجداول وExcel</h1><p>افتح ملفات CSV أو XLSX، راجع البيانات وعدّل الخلايا، ثم نزّل نسخة جديدة. يدعم المختبر العمليات الأساسية وليس جميع خصائص Excel المتقدم.</p></div>
+        <div class="panel">
+          <div class="panel-head wrap-head"><div><b>ورقة العمل</b><span class="muted small" id="sheet-info">بيانات تدريبية جاهزة</span></div><div class="button-row"><label class="btn btn-ghost btn-sm file-button">فتح CSV / Excel<input type="file" id="sheet-file" accept=".csv,.xlsx,.xls"></label><button class="btn btn-ghost btn-sm" id="sample-sheet">تحميل مثال صيدلاني</button><button class="btn btn-primary btn-sm" id="export-sheet">تصدير XLSX</button></div></div>
+          <div class="table-wrap"><table id="data-table"><tbody></tbody></table></div>
+          <div class="sheet-foot"><span id="sheet-dimensions">0 صف × 0 عمود</span><span>انقر نقراً مزدوجاً على الخلية لتعديلها</span><button class="text-btn" id="add-row">+ إضافة صف</button></div>
+        </div>
+        <div class="notice">لا يرفع المختبر الملف إلى خادم؛ تتم المعالجة في المتصفح. احتفظ بنسخة أصلية ولا تستخدم ملفات مرضى أو بيانات تجارية سرية. تصدير XLSX يحتاج مكتبة SheetJS المحملة من الإنترنت.</div>
+      </section>
+
+      <section class="page" id="page-sql">
+        <div class="page-intro"><div class="eyebrow">SQL WORKBENCH · SQLITE</div><h1>مختبر قواعد البيانات</h1><p>قاعدة SQLite تدريبية في الذاكرة. جرّب SELECT وWHERE وGROUP BY وJOIN على بيانات أدوية ومخزون اصطناعية.</p></div>
+        <div class="runtime-bar"><span id="sql-status" class="status-dot"></span><span id="sql-status-text">تهيئة محرك SQL عند أول استخدام</span><button class="btn btn-primary" id="init-sql">تهيئة قاعدة التدريب</button></div>
+        <div class="editor-layout"><div class="panel editor-panel"><div class="panel-head"><b>query.sql</b><div><button class="btn btn-ghost btn-sm" id="sql-example">مثال</button><button class="btn btn-primary btn-sm" id="run-sql">▶ تنفيذ الاستعلام</button></div></div><textarea id="sql-code" class="code-editor sql-editor" spellcheck="false">SELECT generic_name, strength, stock_units,
+       ROUND(stock_units * 1.0 / average_daily_use, 1) AS days_of_stock
+FROM medicines
+ORDER BY days_of_stock ASC;</textarea></div><div class="panel output-panel"><div class="panel-head"><b>نتيجة الاستعلام</b><span class="muted small" id="sql-result-count"></span></div><div class="table-wrap result-wrap" id="sql-output">هيّئ قاعدة التدريب ثم نفّذ الاستعلام.</div></div></div>
+        <div class="notice">قاعدة البيانات مؤقتة في ذاكرة الصفحة، وتُعاد تهيئتها عند إعادة تحميلها. يمكنك لاحقاً تصدير النتائج من واجهة الجداول.</div>
+      </section>
+
+      <section class="page" id="page-research">
+        <div class="page-intro"><div class="eyebrow">EVIDENCE & OPEN DATA</div><h1>مستكشف البحث العلمي والدوائي</h1><p>استعلم عن مصادر بيانات عامة مباشرة. كل نتيجة مرتبطة بمصدرها، ونتائج البحث ليست بديلاً عن التقييم العلمي أو النشرات المحلية المعتمدة.</p></div>
+        <div class="panel research-search"><label for="research-term">اسم الدواء أو المركب</label><div class="search-row"><input id="research-term" value="aspirin" placeholder="مثال: aspirin أو metformin"><select id="research-source"><option value="pubchem">PubChem — خصائص المركبات</option><option value="rxnorm">RxNorm — مفاهيم الأدوية</option><option value="openfda-label">openFDA — النشرات الدوائية</option><option value="openfda-events">openFDA — بلاغات السلامة</option></select><button class="btn btn-primary" id="search-research">بحث</button></div><div class="muted small">تحتاج هذه الوظيفة إلى اتصال إنترنت. قد لا تتاح بعض المصادر من كل شبكة أو متصفح بسبب سياسات الوصول.</div></div>
+        <div class="panel"><div class="panel-head"><b>نتائج البحث</b><button class="btn btn-ghost btn-sm" id="download-research" disabled>تنزيل JSON</button></div><pre class="research-output" id="research-output">اختر المصدر وأدخل اسم المركب ثم اضغط بحث.</pre><div class="source-note" id="research-source-note"></div></div>
+        <div class="notice warning"><b>حدود علمية:</b> بلاغات FAERS لا تثبت السببية ولا تقيس معدل حدوث الأثر الجانبي. بيانات RxNorm وNDC ذات نطاق أمريكي. لا تستنتج التكافؤ أو الجرعة أو قرار العلاج من تطابق الاسم وحده.</div>
+      </section>
+
+      <section class="page" id="page-products">
+        <div class="page-intro"><div class="eyebrow">PRODUCT PORTFOLIO</div><h1>المنتجات الصيدلانية</h1><p>نماذج تطبيقية مرتبطة بمشكلات حقيقية في الصيدلة والصناعة الدوائية. افتح توثيق كل منتج لمعرفة حالته وحدوده.</p></div>
+        <div class="product-grid">
+          <article class="product-card"><span class="product-icon green">▦</span><span class="tag">MVP متاح</span><h3>Pharma Stock Intelligence</h3><p>تحليل الاستهلاك وتغطية المخزون وABC وFSN ومراجعة FEFO.</p><a href="https://github.com/596555/pharmaintelligence/tree/main/09-PRODUCTS/Pharma-Stock-Intelligence" target="_blank" rel="noopener">الكود والتوثيق ↗</a></article>
+          <article class="product-card"><span class="product-icon blue">✓</span><span class="tag">أداة أولية</span><h3>Medicine Master Data Validator</h3><p>فحص اكتمال بيانات الأدوية والوحدات والتكرارات المرشحة.</p><a href="https://github.com/596555/pharmaintelligence/tree/main/09-PRODUCTS/Medicine-Data-Cleaner" target="_blank" rel="noopener">الكود والتوثيق ↗</a></article>
+          <article class="product-card"><span class="product-icon purple">⚗</span><span class="tag">نموذج تعليمي</span><h3>Drug Development Workbench</h3><p>تحليل بيانات تطوير المستحضرات ومخاطر QbD على بيانات اصطناعية.</p><a href="https://github.com/596555/pharmaintelligence/tree/main/09-PRODUCTS/Drug-Development-Workbench" target="_blank" rel="noopener">الكود والتوثيق ↗</a></article>
+          <article class="product-card planned"><span class="product-icon amber">◈</span><span class="tag">مخطط</span><h3>Drug Safety Signal Explorer</h3><p>تحليل استكشافي لإشارات السلامة مع ضوابط التفسير.</p><a href="https://github.com/596555/pharmaintelligence/tree/main/09-PRODUCTS" target="_blank" rel="noopener">كتالوج المنتجات ↗</a></article>
+          <article class="product-card planned"><span class="product-icon amber">⟳</span><span class="tag">مخطط</span><h3>Pharmacy Workflow Automator</h3><p>نمذجة تدفقات العمل وتقليل المهام المتكررة.</p><a href="https://github.com/596555/pharmaintelligence/tree/main/09-PRODUCTS" target="_blank" rel="noopener">كتالوج المنتجات ↗</a></article>
+          <article class="product-card planned"><span class="product-icon amber">✧</span><span class="tag">مخطط</span><h3>Pharma Knowledge Copilot</h3><p>مساعد معرفة يستند إلى مصادر موثوقة ويذكر الاستشهادات.</p><a href="https://github.com/596555/pharmaintelligence/tree/main/09-PRODUCTS" target="_blank" rel="noopener">كتالوج المنتجات ↗</a></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-library">
+        <div class="page-intro"><div class="eyebrow">SCIENTIFIC LIBRARY</div><h1>المكتبة والمصادر</h1><p>مصادر للتعلم والبيانات والأدلة التنظيمية. راجع تاريخ المصدر ونطاقه قبل استخدامه في استنتاج علمي.</p></div>
+        <div class="library-grid">
+          <a class="library-card" href="https://www.kaggle.com/learn/" target="_blank" rel="noopener"><b>Kaggle Learn</b><span>Python · SQL · Pandas</span><small>تعلم وتمارين وشهادات إكمال</small></a>
+          <a class="library-card" href="https://skillsbuild.org/" target="_blank" rel="noopener"><b>IBM SkillsBuild</b><span>Data · AI · Digital skills</span><small>مسارات وشارات رقمية</small></a>
+          <a class="library-card" href="https://open.fda.gov/" target="_blank" rel="noopener"><b>openFDA</b><span>Drug labels · FAERS</span><small>واجهات بيانات FDA العامة</small></a>
+          <a class="library-card" href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener"><b>PubChem</b><span>Compound data</span><small>خصائص ومعرفات كيميائية</small></a>
+          <a class="library-card" href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener"><b>PubMed</b><span>Biomedical literature</span><small>الأدبيات الطبية الحيوية</small></a>
+          <a class="library-card" href="https://clinicaltrials.gov/data-api/about-api" target="_blank" rel="noopener"><b>ClinicalTrials.gov</b><span>Clinical studies API</span><small>سجلات الدراسات السريرية</small></a>
+          <a class="library-card" href="https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm" target="_blank" rel="noopener"><b>DailyMed</b><span>Drug labeling</span><small>النشرات الدوائية المقدمة إلى FDA</small></a>
+          <a class="library-card" href="https://www.who.int/" target="_blank" rel="noopener"><b>World Health Organization</b><span>Guidelines · Health</span><small>أدلة ومصادر صحية دولية</small></a>
+          <a class="library-card" href="https://www.ich.org/page/quality-guidelines" target="_blank" rel="noopener"><b>ICH Quality Guidelines</b><span>Q8 · Q9 · Q10 · Q12</span><small>أدلة الجودة والتطوير الدوائي</small></a>
+        </div>
+        <div class="notice">الدورات والشهادات: <a href="https://github.com/596555/pharmaintelligence/blob/main/10-LEARNING-RESOURCES/FREE_COURSES_AND_CERTIFICATES_AR.md" target="_blank" rel="noopener">افتح الدليل العربي الكامل ↗</a></div>
+      </section>
+      <footer class="footer"><span>PHARMAINTELLIGENCE 365 · Built for learning and reproducible science</span><span>نسخة أولية قابلة للتطوير · لا تعتمد سريرياً أو تصنيعياً</span></footer>
+    </div>
+  </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+</body>
+</html>
