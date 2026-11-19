@@ -46,7 +46,7 @@ def analyze(rows, as_of: date, expiry_window_days: int = 90):
         p = by_product[r["product_id"]]
         p["name"] = r["medicine_name"]
         p["quantity"] += r["_qty"]
-        p["monthly_usage"] += r["_usage"]
+        p["monthly_usage"] = max(p["monthly_usage"], r["_usage"])
         p["stock_value"] += r["_qty"] * r["_cost"]
     low = []
     for pid, p in by_product.items():
