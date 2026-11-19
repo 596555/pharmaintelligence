@@ -13,13 +13,14 @@
 ## Start here
 1. [Open the unified browser lab](13-WEB-LAB/index.html) — Python, Excel/CSV, SQL, research and learning in one interface
 2. [Web Lab setup and limitations](13-WEB-LAB/README.md)
-3. [Arabic PHARMAINTELLIGENCE Academy](00-START-HERE/ACADEMY_GUIDE_AR.md) — offline lessons, practical tasks, quizzes and local progress tracking
-4. [Personal AI tutor prompt](00-START-HERE/AI_TUTOR_PROMPT_AR.md) — turn ChatGPT into an interactive pharmacy/AI tutor
-5. [Project charter](00-START-HERE/PROJECT_CHARTER.md)
-6. [Windows 11 setup](00-START-HERE/WINDOWS_SETUP.md)
-7. [365-day roadmap](00-START-HERE/ROADMAP_365.md)
-8. [Working rules](00-START-HERE/WORKING_RULES.md)
-9. [Practical execution plan](00-START-HERE/EXECUTION_PLAN.md)
+3. [Enable browser deployment (one-time GitHub Pages setup)](13-WEB-LAB/DEPLOYMENT_AR.md)
+4. [Arabic PHARMAINTELLIGENCE Academy](00-START-HERE/ACADEMY_GUIDE_AR.md) — offline lessons, practical tasks, quizzes and local progress tracking
+5. [Personal AI tutor prompt](00-START-HERE/AI_TUTOR_PROMPT_AR.md) — turn ChatGPT into an interactive pharmacy/AI tutor
+6. [Project charter](00-START-HERE/PROJECT_CHARTER.md)
+7. [Windows 11 setup](00-START-HERE/WINDOWS_SETUP.md)
+8. [365-day roadmap](00-START-HERE/ROADMAP_365.md)
+9. [Working rules](00-START-HERE/WORKING_RULES.md)
+10. [Practical execution plan](00-START-HERE/EXECUTION_PLAN.md)
 
 ## Repository map
 - `00-START-HERE/` — charter, setup, roadmap and rules
