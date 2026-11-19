@@ -4,11 +4,11 @@ Learn SELECT, WHERE, ORDER BY, GROUP BY, aggregates, CASE, JOIN, subqueries, CTE
 
 ## Free learning
 - SQLBolt: https://sqlbolt.com/
-- SQLite documentation: https://sqlite.org/docs.html
+- SQLite docs: https://sqlite.org/docs.html
 - Mode SQL tutorial: https://mode.com/sql-tutorial/
 
 ## Practice schema
-Synthetic tables: medicines, suppliers, stock_batches, stock_movements and branches. Do not store patient data in this practice schema.
+Synthetic tables: medicines, suppliers, stock_batches, stock_movements and branches. Do not store patient data.
 
 ## Deliverable
-Write 15 documented queries answering inventory and purchasing questions. Include expected output descriptions and edge cases.
+Write 15 documented queries answering inventory and purchasing questions, including expected outputs and edge cases.

@@ -1,13 +1,9 @@
 # Generative AI and Retrieval
 
-Learn LLM capabilities and failure modes, structured outputs, validation, retrieval-augmented generation, chunking, citations, evaluation, abstention and privacy.
+Learn LLM limitations, structured outputs, validation, retrieval-augmented generation, chunking, citations, evaluation, abstention and privacy.
 
 ## Starter deliverable
-Build a small knowledge assistant over curated public documents. Every answer must cite source passages or state that the source set does not support an answer. No patient-specific diagnosis or treatment advice.
+Build a knowledge assistant over curated public documents. Answers must cite retrieved passages or abstain when the source set does not support an answer.
 
-## Evaluation checklist
-- Is the answer supported by retrieved text?
-- Are medicine names, strengths and units preserved exactly?
-- Does it abstain when evidence is absent or conflicting?
-- Are citations traceable and sources dated?
-- Are prompts/outputs free of personal or confidential data?
+## Evaluation
+Check source support, exact medicine names/strengths/units, traceable citations, dated references and privacy. No patient-specific diagnosis or treatment advice.

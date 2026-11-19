@@ -1,13 +1,13 @@
 # PHARMAINTELLIGENCE 365
 ## Arabic Lab for AI, Data & Digital Transformation in Pharmacy
 
-**Mission:** Build practical, safe, evidence-based digital products for pharmacy and healthcare while developing from a general pharmacist into a junior pharmaceutical/healthcare data analyst and digital pharmacy solutions associate.
+**Mission:** Build practical, safe, evidence-based digital products for pharmacy and healthcare.
 
 **Primary track:** Pharmaceutical & Healthcare Data Analytics  
 **Secondary track:** Pharmacy Operations, Digital Transformation & Automation  
 **Long-term extensions:** Pharmacovigilance analytics, bioinformatics and drug-discovery data.
 
-> Learning and portfolio project only. No output replaces a licensed professional's judgment.
+> Educational portfolio only. No output replaces a licensed professional's judgment.
 
 ## Start here
 1. [Project charter](00-START-HERE/PROJECT_CHARTER.md)
@@ -30,17 +30,10 @@
 - `11-TESTS/` — quality, safety and reproducibility
 
 ## Learning capacity
-Designed for 10 hours/week over 52 weeks (about 520 hours). Free resources and open-source tools are prioritized; paid certifications are optional.
+10 hours/week for 52 weeks (about 520 hours). Free resources and open-source tools are prioritized.
 
 ## Safety
-- Never commit patient-identifiable, confidential or unauthorized pharmacy data.
-- Use synthetic/public data with documented provenance and terms.
-- FAERS/spontaneous reports do not establish causality or incidence.
-- Validate medicine names, strengths, dosage forms and units; never guess missing clinical facts.
-- Read [Data Safety Policy](11-TESTS/DATA_SAFETY_POLICY.md).
+Never commit patient-identifiable or confidential pharmacy data. Use synthetic/public data with documented provenance. Spontaneous adverse-event reports do not establish causality or incidence. Validate medicine names, strengths, dosage forms and units; never guess missing clinical facts.
 
 ## Completion standard
-Each topic must produce an artifact: cleaned dataset, query, dashboard, tested script, documented workflow or case study. See [Assessment Rubric](11-TESTS/ASSESSMENT_RUBRIC.md).
-
-**Status:** Initial project scaffold.  
-**License:** To be selected once the intended reuse terms are decided.
+Each topic produces an artifact: dataset, query, dashboard, tested script, documented workflow or case study.

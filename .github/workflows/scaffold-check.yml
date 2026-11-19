@@ -1,0 +1,21 @@
+name: Scaffold checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  required-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify project documents
+        run: |
+          test -f README.md
+          test -f 00-START-HERE/PROJECT_CHARTER.md
+          test -f 00-START-HERE/ROADMAP_365.md
+          test -f 11-TESTS/DATA_SAFETY_POLICY.md
+          echo "Project scaffold verified."

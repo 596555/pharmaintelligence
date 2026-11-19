@@ -4,9 +4,9 @@ Learn variables, types, conditions, loops, functions, modules, CSV/JSON, pandas,
 
 ## Free learning
 - Official Python tutorial: https://docs.python.org/3/tutorial/
-- Kaggle Python and Pandas: https://www.kaggle.com/learn
+- Kaggle Python/Pandas: https://www.kaggle.com/learn
 - Google Colab: https://colab.research.google.com/
 - GitHub Skills: https://skills.github.com/
 
 ## Deliverable
-Build a command-line data-quality checker for a synthetic medicine catalogue. It should report invalid fields and export a review file. Include tests and a README.
+Build a command-line data-quality checker for a synthetic medicine catalogue. It reports invalid fields and exports a review file. Include tests and a README.
