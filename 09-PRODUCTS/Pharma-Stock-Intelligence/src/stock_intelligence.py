@@ -2,6 +2,7 @@ from __future__ import annotations
 from datetime import date
 from pathlib import Path
 import csv
+import math
 REQUIRED={"product_id","medicine_name","category","batch_no","expiry_date","quantity","reorder_level","unit_cost","supplier"}
 def load_stock(path: str|Path)->list[dict]:
     with open(path,newline="",encoding="utf-8-sig") as f: rows=list(csv.DictReader(f))
@@ -19,7 +20,7 @@ def validate_rows(rows:list[dict])->None:
         try:
             date.fromisoformat(r['expiry_date']); q=int(r['quantity']); level=int(r['reorder_level']); cost=float(r['unit_cost'])
         except (ValueError,TypeError) as e: raise ValueError(f"Row {n}: invalid date/numeric value") from e
-        if q<0 or level<0 or cost<0 or cost==float('inf'): raise ValueError(f"Row {n}: values must be finite and non-negative")
+        if q<0 or level<0 or not math.isfinite(cost) or cost<0: raise ValueError(f"Row {n}: values must be finite and non-negative")
 def summarize(rows:list[dict],as_of:date|None=None)->dict:
     validate_rows(rows); as_of=as_of or date.today(); expired=near=low=0
     for r in rows:
