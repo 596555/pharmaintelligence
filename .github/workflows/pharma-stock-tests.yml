@@ -24,4 +24,6 @@ jobs:
           PYTHONPATH: 09-PRODUCTS/Drug-Development-Workbench/src
         run: python -m unittest discover -s 09-PRODUCTS/Drug-Development-Workbench/tests -v
       - name: Run public research connector tests
+        env:
+          PYTHONPATH: 08-RESEARCH-TOOLS
         run: python -m unittest discover -s 08-RESEARCH-TOOLS/tests -v
