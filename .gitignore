@@ -14,3 +14,4 @@ reports/local/
 .DS_Store
 Thumbs.db
 .vscode/
+.pharmaintelligence_progress.json
