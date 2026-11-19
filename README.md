@@ -47,6 +47,9 @@
 ## Safety
 Never commit patient-identifiable or confidential pharmacy/manufacturing data. Use synthetic/public data with documented provenance. Spontaneous adverse-event reports do not establish causality or incidence. Validate medicine names, strengths, dosage forms and units; never guess missing clinical facts. Never treat a training model or synthetic development record as a manufacturing instruction, product specification, batch-release decision or clinical recommendation.
 
+## Quality and safety review
+- [Pharmaceutical development and manufacturing checklist](11-TESTS/PHARMACEUTICAL_DEVELOPMENT_CHECKLIST.md)
+
 ## Completion standard
 Each topic produces an artifact: dataset, query, dashboard, tested script, documented workflow, evidence map or case study.
 
