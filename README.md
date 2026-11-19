@@ -52,6 +52,7 @@ Each topic produces an artifact: dataset, query, dashboard, tested script, docum
 - [Synthetic batch stock](09-PRODUCTS/Pharma-Stock-Intelligence/data/synthetic_stock.csv)
 - [Synthetic consumption history](09-PRODUCTS/Pharma-Stock-Intelligence/data/synthetic_consumption.csv)
 - [Advanced analytics engine](09-PRODUCTS/Pharma-Stock-Intelligence/src/advanced_analytics.py)
+- [Medicine Master Data Validator](09-PRODUCTS/Medicine-Data-Cleaner/README.md)
 
 ## First runnable product
 - [First Product Guide](FIRST_PRODUCT_GUIDE.md)
