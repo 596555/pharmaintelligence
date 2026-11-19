@@ -35,6 +35,7 @@
 - `10-LEARNING-RESOURCES/` — free courses, badges and certificate guidance
 - `11-TESTS/` — quality, safety and reproducibility
 - `12-DRUG-DEVELOPMENT-RD/` — manufacturing, GMP, QbD, CMC, R&D and drug discovery
+- `13-WEB-LAB/` — unified Arabic browser workspace with Python, spreadsheets, SQL, research and academy
 
 ## Pharmacy and pharmaceutical specialist skills
 - [Pharmacy domain skills](05-PHARMACEUTICAL-DATA/PHARMACY_SPECIALIST_SKILLS.md)
