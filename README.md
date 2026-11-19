@@ -29,8 +29,10 @@
 - `06-MACHINE-LEARNING/` — applied ML foundations
 - `07-GENERATIVE-AI/` — reliable LLM and retrieval workflows
 - `08-PHARMACY-AUTOMATION/` — workflow analysis and automation
+- `08-RESEARCH-TOOLS/` — public research APIs, provenance-aware data connectors and integration guide
 - `09-PRODUCTS/` — six portfolio products (some are still planned)
 - `10-PORTFOLIO/` — case studies
+- `10-LEARNING-RESOURCES/` — free courses, badges and certificate guidance
 - `11-TESTS/` — quality, safety and reproducibility
 - `12-DRUG-DEVELOPMENT-RD/` — manufacturing, GMP, QbD, CMC, R&D and drug discovery
 
@@ -42,6 +44,11 @@
 - [Pharmacy SQL examples](03-SQL-DATABASES/PHARMACY_ANALYTICS_QUERIES.sql)
 - [Manufacturing, R&D and drug discovery learning track](12-DRUG-DEVELOPMENT-RD/README.md)
 - [12-week manufacturing and R&D learning plan](12-DRUG-DEVELOPMENT-RD/LEARNING_PLAN_12_WEEKS.md)
+
+## Free courses and connected research environment
+- [Free courses and certificates (Arabic)](10-LEARNING-RESOURCES/FREE_COURSES_AND_CERTIFICATES_AR.md)
+- [Connected scientific research environment](08-RESEARCH-TOOLS/RESEARCH_ENVIRONMENT_AR.md)
+- [Public data connector: openFDA, PubChem and RxNorm](08-RESEARCH-TOOLS/data_hub.py)
 
 ## Learning capacity
 10 hours/week for 52 weeks (about 520 hours). Free resources and open-source tools are prioritized. The manufacturing/R&D block is integrated as a specialization extension; it does not replace the core data, programming and pharmacy-informatics foundations.
