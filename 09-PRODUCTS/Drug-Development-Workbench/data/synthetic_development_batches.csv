@@ -1,0 +1,9 @@
+batch_id,formulation_id,stage,assay_pct,dissolution_30min_pct,hardness_n,blend_uniformity_cv_pct,moisture_pct
+DEV-001,FORM-A,screening,98.4,82.1,68,4.2,2.1
+DEV-002,FORM-A,screening,99.1,84.0,70,3.8,2.0
+DEV-003,FORM-A,optimization,99.0,88.2,72,3.5,1.9
+DEV-004,FORM-A,optimization,98.8,87.5,71,3.7,2.0
+DEV-005,FORM-B,screening,97.9,79.4,64,5.1,2.4
+DEV-006,FORM-B,screening,98.2,80.1,66,4.8,2.3
+DEV-007,FORM-B,optimization,98.5,85.3,69,4.4,2.2
+DEV-008,FORM-B,pilot-learning,98.7,86.0,70,4.1,2.1
